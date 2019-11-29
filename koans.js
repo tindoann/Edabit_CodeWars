@@ -63,7 +63,7 @@ const triArea = (base, height) => (base * height) / 2;
 // #Whtie Level -  nextEdge(9, 2) ➞ 10
 
 
-// 4 . Create a function that finds the maximum range of a triangles third edge.
+// 4. Create a function that finds the maximum range of a triangles third edge.
 
 function nextEdge(side1, side2) {
 	return (side1 + side2) - 1
@@ -78,3 +78,18 @@ function nextEdge(side1, side2) {
 }
 
 const nextEdge = (side1, side2) => side1 + side2 - 1;
+
+// #Whtie Level -  convert(2) ➞ 120
+
+// 5. Write a function that takes an integer minutes and converts it to seconds.
+
+function convert(minutes) {
+	seconds = minutes * 60; 
+	return seconds
+}
+
+function convert(minutes) {
+	return  minutes * 60;
+}
+
+const convert = (minutes) => minutes * 60
