@@ -13,9 +13,9 @@ function add(a, b) {
 
 function add(a, b) {
   if (typeof a !== "number" || typeof b !== "number") {
-      return "Sorry but you didn't pass two numbers.";
+    return "Sorry but you didn't pass two numbers.";
   }
-  return a + b; 
+    return a + b; 
 }
 
 
@@ -38,3 +38,25 @@ const lessThanOrEqualToZero = num => num <= 0;
 function lessThanOrEqualToZero(num) {
 	return num <= 0 ? true : false;
 }
+
+// #White triArea(10, 10) ➞ 50
+
+// 3.  Write a function that takes the base and height of a triangle and return its area.
+
+function triArea(base, height) {
+	let area = (base * height ) / 2; 
+  return area
+}
+
+function triArea(base, height) {
+	var a = base * height ;
+	var b = a / 2 ;
+	return b ;
+}
+
+function triArea(base, height) {
+	return base * height / 2
+}
+
+const triArea = (base, height) => (base * height) / 2;
+
