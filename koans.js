@@ -1,4 +1,4 @@
-// #White addition(3, 2) ➞ 5
+// #White Level - addition(3, 2) ➞ 5
 
 // 1. Create a function that takes two numbers as arguments and return their sum.
 
@@ -19,7 +19,7 @@ function add(a, b) {
 }
 
 
-// #White lessThanOrEqualToZero(5) ➞ false
+// #White Level - lessThanOrEqualToZero(5) ➞ false
 
 // 2. Create a function that takes a number as its only argument and returns true if it's less than or equal 
 //    to zero, otherwise return false.
@@ -39,7 +39,7 @@ function lessThanOrEqualToZero(num) {
 	return num <= 0 ? true : false;
 }
 
-// #White triArea(10, 10) ➞ 50
+// #White Level - triArea(10, 10) ➞ 50
 
 // 3.  Write a function that takes the base and height of a triangle and return its area.
 
@@ -60,3 +60,21 @@ function triArea(base, height) {
 
 const triArea = (base, height) => (base * height) / 2;
 
+// #Whtie Level -  nextEdge(9, 2) ➞ 10
+
+
+// 4 . Create a function that finds the maximum range of a triangles third edge.
+
+function nextEdge(side1, side2) {
+	return (side1 + side2) - 1
+}
+
+function nextEdge(side1, side2) {
+	if (side1 > 0 && side2 > 0) {
+		return (side1 + side2) - 1;
+	} else {
+		return;
+	}
+}
+
+const nextEdge = (side1, side2) => side1 + side2 - 1;
