@@ -3,7 +3,7 @@
 // 1. Create a function that takes two numbers as arguments and return their sum.
 
 function add(a, b) {
-  return a + b
+  return a + b;
 }
 
 function add(a, b) {
@@ -45,17 +45,17 @@ function lessThanOrEqualToZero(num) {
 
 function triArea(base, height) {
 	let area = (base * height ) / 2; 
-  return area
+  return area;
 }
 
 function triArea(base, height) {
 	var a = base * height ;
 	var b = a / 2 ;
-	return b ;
+	return b;
 }
 
 function triArea(base, height) {
-	return base * height / 2
+	return base * height / 2;
 }
 
 const triArea = (base, height) => (base * height) / 2;
@@ -85,7 +85,7 @@ const nextEdge = (side1, side2) => side1 + side2 - 1;
 
 function convert(minutes) {
 	seconds = minutes * 60; 
-	return seconds
+	return seconds;
 }
 
 function convert(minutes) {
@@ -93,3 +93,17 @@ function convert(minutes) {
 }
 
 const convert = (minutes) => minutes * 60
+
+// #Whtie Level -  addition(9) ➞ 10
+
+// Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+
+function addition(num) {
+	return num + 1;
+}
+
+function addition(num) {
+	return ++num;
+}
+
+const addition = (num) => num++
