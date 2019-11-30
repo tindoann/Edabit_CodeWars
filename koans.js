@@ -154,4 +154,33 @@ function divisibleByFive(n) {
 divisibleByFive = n => !(n % 5)
 
 
+// #White Level - profitableGamble(0.2, 50, 9) ➞ true
+
+/*
+
+8. Create a function that takes in three arguments (prob, prize, pay) and returns true if prob * prize > pay; otherwise return false.
+To illustrate, profitableGamble(0.2, 50, 9) should yield true, since the net profit is 1 (0.2 * 50 - 9), and 1 > 0.
+
+*/
+
+function profitableGamble(prob, prize, pay) {
+	let profit = prob * prize - pay;
+		if (profit > 0) {
+			return true;
+		} else {
+			return false;
+		}
+}
+
+function profitableGamble(prob, prize, pay) {
+	return (prob * prize - pay) > 0
+}
+
+const profitableGamble = (prob, prize, pay) =>
+	prize * prob > pay;
+	
+function profitableGamble(prob, prize, pay) {
+	return prob * prize - pay > 0 ? true : false
+}
+
 
