@@ -112,7 +112,7 @@ const addition = (num) => num++
 
 /*
 
-In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
+6. In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
 
 chickens = 2 legs
 cows = 4 legs
@@ -133,4 +133,25 @@ function animals(chickens, cows, pigs) {
 }
 
 const animals = (chickens, cows, pigs) => chickens * 2 + cows * 4 + pigs * 4;
+
+// #Whtie Level -  divisibleByFive(5) ➞ true
+
+// 7. Create a function that returns true if an integer is divisible by 5, and false otherwise.
+
+function divisibleByFive(n) {
+	return n % 5 === 0; 
+}
+
+function divisibleByFive(n) {
+	if (n % 5 === 0) {
+		return true;
+	}
+	else {
+		return false;
+	}
+};
+
+divisibleByFive = n => !(n % 5)
+
+
 
