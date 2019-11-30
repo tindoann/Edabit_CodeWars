@@ -183,4 +183,49 @@ function profitableGamble(prob, prize, pay) {
 	return prob * prize - pay > 0 ? true : false
 }
 
+// #White Level - function(1, 0, 10) ➞ 205 input (5, 2, -6) ➞ "invalid"
 
+/* 
+
+Imagine you run a website that presents users with different coding challenges in levels Easy, Medium, and Hard, 
+where users get points for completing challenges. An Easy challenge is worth five points, a Medium challenge 
+is worth ten points, and a Hard challenge is worth twenty points.
+
+Create a function that takes in the number of each challenge level a user has played and calculates the 
+user's total number of points. Keep in mind that a user cannot complete negative challenges, so the 
+function should return the string "invalid" if any of the passed parameters is negative.
+
+Create a function that takes in the number of each challenge level a user has played and calculates 
+the user's total number of points. Keep in mind that a user cannot complete negative challenges, so the 
+function should return the string "invalid" if any of the passed parameters is negative.
+
+*/ 
+
+function scoreCalculator(easy, med, hard) {
+	if (easy < 0 || med < 0 || hard < 0) {
+	 return "invalid";
+  } else {
+	 return easy * 5 + med * 10 + hard * 20;
+	}
+}
+
+function scoreCalculator(easy, med, hard) {
+  if (easy >= 0 && med >= 0 && hard >= 0){
+		return (easy * 5) + (med * 10) + (hard * 20);
+	} else {
+		return "invalid";
+	}	
+}
+
+const scoreCalculator = (...points) => 
+	points.some(num => num < 0) ? 
+		'invalid' : (points[0]*5) + (points[1]*10) + (points[2]*20)
+
+const scoreCalculator = (e, m, h) => {
+	if (e < 0 || m < 0 || h < 0) return 'invalid'
+		return e * 5 + m * 10 + h * 20
+	}
+
+function scoreCalculator(easy, med, hard) {
+	return (easy<0||med<0||hard<0) ? "invalid" : 5*easy + 10*med + 20*hard;
+}
