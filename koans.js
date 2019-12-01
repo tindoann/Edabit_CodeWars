@@ -294,5 +294,36 @@ function squared(b) {
 	return b*b;
 }
 
+// #White - length("apple") ➞ 5
 
+// 14. Write a function that returns the length of a string. Make your function recursive.
+
+function length(str) {
+  while(str.length >= 0) {
+	  return str.length
+  }
+}
+
+const length = str => str == '' ? 0 : length(str.substring(1)) + 1;
+
+const length = str => !str ? 0 : 1 + length(str.slice(1));
+
+
+
+// Recursion Example - StackOverflow
+
+var counter = 10;
+while(counter > 0) {
+    console.log(counter--);
+}
+
+var countdown = function(value) {
+	if (value > 0) {
+			console.log(value);
+			return countdown(value - 1);
+	} else {
+			return value;
+	}
+};
+countdown(10);
 
