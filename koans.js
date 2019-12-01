@@ -256,4 +256,30 @@ function concatName(firstName, lastName) {
 
 const concatName = (first, last) => `${last}, ${first}`;
 
+// #White Level - A string containing only whitespaces " " does not count as empty.
 
+// 12. Create a function that returns true if a string is empty and false otherwise.
+
+function isEmpty(s) {
+	return (!s || 0 === s.length);
+}
+
+function isEmpty(s) {
+	return s.length == 0;
+}
+
+function isEmpty(s) {
+	return s === '';
+}
+
+function isEmpty(s) {
+	if (s === '') {
+		return true
+	} else {
+		return false
+	}
+}
+
+function isEmpty(s) {
+	return s === '' ? true : false;
+}
