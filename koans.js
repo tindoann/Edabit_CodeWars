@@ -387,9 +387,19 @@ function check(arr, el) {
 	}
 }
 
+const check = (arr, el) => Array.from(arr).includes(el) ? true : false; 
+
 const check = (arr, el) => arr.includes(el)
 
 function check(arr, el) {
 	return arr.indexOf(el) > -1;
 }
+
+// #White - helloName("Gerald") ➞ "Hello Gerald!"
+
+// 18. Create a function that takes a name and returns a greeting. Don't use a normal function but use an "arrow function".
+
+const helloName = name => `Hello ${name}!`
+
+const helloName = name => 'Hello ' + name+'!'
 
