@@ -183,7 +183,7 @@ function profitableGamble(prob, prize, pay) {
 	return prob * prize - pay > 0 ? true : false
 }
 
-// #White Level - function(1, 0, 10) ➞ 205 input (5, 2, -6) ➞ "invalid"
+// #Yellow Level - function(1, 0, 10) ➞ 205 input (5, 2, -6) ➞ "invalid"
 
 /* 
 
@@ -229,3 +229,15 @@ const scoreCalculator = (e, m, h) => {
 function scoreCalculator(easy, med, hard) {
 	return (easy<0||med<0||hard<0) ? "invalid" : 5*easy + 10*med + 20*hard;
 }
+
+// #White Level - howManySeconds(10) ➞ 36000
+
+// Write a function that converts hours into seconds.
+
+function howManySeconds(hours) {
+	return hours * 3600;
+}
+
+const howManySeconds = hours => Number.isInteger(hours) ? hours*3600 : "error";
+
+let howManySeconds = h => h * 3600;
