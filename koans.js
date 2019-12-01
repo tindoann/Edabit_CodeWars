@@ -187,7 +187,7 @@ function profitableGamble(prob, prize, pay) {
 
 /* 
 
-Imagine you run a website that presents users with different coding challenges in levels Easy, Medium, and Hard, 
+9. Imagine you run a website that presents users with different coding challenges in levels Easy, Medium, and Hard, 
 where users get points for completing challenges. An Easy challenge is worth five points, a Medium challenge 
 is worth ten points, and a Hard challenge is worth twenty points.
 
@@ -232,7 +232,7 @@ function scoreCalculator(easy, med, hard) {
 
 // #White Level - howManySeconds(10) ➞ 36000
 
-// Write a function that converts hours into seconds.
+// 10. Write a function that converts hours into seconds.
 
 function howManySeconds(hours) {
 	return hours * 3600;
@@ -241,3 +241,19 @@ function howManySeconds(hours) {
 const howManySeconds = hours => Number.isInteger(hours) ? hours*3600 : "error";
 
 let howManySeconds = h => h * 3600;
+
+// #White Level - concatName("First", "Last") ➞ "Last, First"
+
+// 11. Given two strings, firstName and lastName, return a single string in the format "last, first".
+
+function concatName(firstName, lastName) {
+	return lastName + ', ' + firstName
+}
+
+function concatName(firstName, lastName) {
+	return `${lastName}, ${firstName}`;
+}
+
+const concatName = (first, last) => `${last}, ${first}`;
+
+
