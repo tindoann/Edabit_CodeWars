@@ -361,3 +361,35 @@ function comp(str1, str2) {
 }
 
 const comp = (str1, str2) => str1.length === str2.length;
+
+//  #White - check([1, 2, 3, 4, 5], 3) ➞ true
+
+// 17. Write a function to check if an array contains a particular number.
+
+function check(arr, el) {
+	return arr.includes(el); 
+}
+
+function check(arr, el) {
+	for (var i = 0; i < arr.length; i++){
+		if (arr[i] === el){
+			return true;
+		}
+	}
+	return false;
+}
+
+function check(arr, el) {
+	if (arr.includes(el)) {
+		return true
+	} else {
+		return false
+	}
+}
+
+const check = (arr, el) => arr.includes(el)
+
+function check(arr, el) {
+	return arr.indexOf(el) > -1;
+}
+
