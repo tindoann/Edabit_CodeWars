@@ -283,3 +283,16 @@ function isEmpty(s) {
 function isEmpty(s) {
 	return s === '' ? true : false;
 }
+
+// #White - squared(9) ➞ 81
+
+// 13. Fix the code in the code tab to pass this challenge (only syntax errors). 
+// Look at the examples below to get an idea of what the function should do.
+// The variables are named just fine, you just have to debug the code usage of variables.
+
+function squared(b) {
+	return b*b;
+}
+
+
+
