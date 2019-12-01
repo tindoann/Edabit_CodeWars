@@ -329,7 +329,7 @@ countdown(10);
 
 // #White - getFirstValue([80, 5, 100]) ➞ 80
 
-// Create a function that takes an array and returns the first element.
+// 15. Create a function that takes an array and returns the first element.
 
 function getFirstValue(arr) {
 	let first = arr => arr[0];
@@ -341,3 +341,23 @@ function getFirstValue(arr) {
 }
 
 const getFirstValue = arr => arr[0];
+
+// #White - comp("ABC", "DE") ➞ false
+
+// 16. Create a function that takes two strings as arguments and return either true or false depending 
+// on whether the total number of characters in the first string is equal to the total number of characters 
+// in the second string.
+
+function comp(str1, str2) {
+	if (str1.length === str2.length) {
+		return true;
+	} else {
+		return false; 
+	}
+}
+
+function comp(str1, str2) {
+	return str1.length === str2.length;
+}
+
+const comp = (str1, str2) => str1.length === str2.length;
