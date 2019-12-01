@@ -327,3 +327,17 @@ var countdown = function(value) {
 };
 countdown(10);
 
+// #White - getFirstValue([80, 5, 100]) ➞ 80
+
+// Create a function that takes an array and returns the first element.
+
+function getFirstValue(arr) {
+	let first = arr => arr[0];
+  return(first(arr));
+}
+
+function getFirstValue(arr) {
+	return arr[0];
+}
+
+const getFirstValue = arr => arr[0];
