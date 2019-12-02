@@ -434,3 +434,24 @@ var array = [1,2,3,4,5,6];
 console.log(array.slice(-1)); // [6]
 console.log(array.slice(-2)); // [5,6]
 console.log(array.slice(-3)); // [4,5,6]
+
+// #White - search([9, 8, 3], 3) ➞ 2
+
+// 20. Create a function that finds the index of a given item.
+
+function search(arr, item) {
+	return arr.indexOf(item); 
+}
+
+function search(arr, item) {
+	for(var i = 0;i < arr.length; i++) {
+		if (arr[i] == item) {
+		return i;
+		}
+	}
+	return -1;
+}
+
+function search(arr, item) {
+	return arr.findIndex(i => i === item)
+}
