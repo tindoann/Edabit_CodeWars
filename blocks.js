@@ -551,3 +551,32 @@ var word = 'fox';
 
 console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in the sentence`);
 // expected output: "The word "fox" is in the sentence"
+
+// #White - reverse([1, 2, 3, 4]) ➞ [4, 3, 2, 1]
+
+// 25. Write a function to reverse an array.
+
+function reverse(arr) {
+	return arr.reverse()
+}
+
+function reverse(arr) {
+	let result = [];
+	for (let i = arr.length -1; i > -1; i--) {
+		result.push(arr[i]);
+	}
+	
+	console.log(...result);
+	return result;
+}
+
+function reverse(arr) {
+	let word = [];
+	for(letter of arr){
+		word.unshift(letter)
+	}
+	return word
+}
+
+const reverse = arr => arr.reverse();
+
