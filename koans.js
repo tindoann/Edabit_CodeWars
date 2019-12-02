@@ -403,3 +403,34 @@ const helloName = name => `Hello ${name}!`
 
 const helloName = name => 'Hello ' + name+'!'
 
+// #White - getLastItem(["cat", "dog", "duck"]) ➞ "duck"
+
+// 19. Create a function that accepts an array and returns the last item in the array.
+
+function getLastItem(arr) {
+	return arr.pop()
+}
+
+function getLastItem(arr) {
+	return (arr.slice(-1)[0]);
+}
+
+function getLastItem(arr) {
+  return arr[arr.length - 1]
+}
+
+const getLastItem = arr => arr[arr.length - 1];
+
+function getLastItem(arr) {
+  if (arr.length > 0)
+  		return(arr[arr.length-1]);
+  else return(null);
+}
+
+
+// codeblocq example
+
+var array = [1,2,3,4,5,6];
+console.log(array.slice(-1)); // [6]
+console.log(array.slice(-2)); // [5,6]
+console.log(array.slice(-3)); // [4,5,6]
