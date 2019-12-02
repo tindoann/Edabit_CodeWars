@@ -629,3 +629,25 @@ function concat(arr1, arr2) {
 }
 
 	const concat = (arr1, arr2) => arr1.concat(arr2);
+
+// #White - divisible(1000) ➞ true
+
+// 28. Create a function that takes an integer and returns true if it's divisible by 100, otherwise return false.
+
+function divisible(num) {
+	if (num % 100 === 0) {
+		return true; 
+	} else {
+		return false; 
+	}
+}
+
+function divisible(num) {
+	return !(num % 100)
+}
+
+function divisible(num) {
+	return num % 100 === 0;
+}
+
+const divisible = num => num % 100 === 0;
