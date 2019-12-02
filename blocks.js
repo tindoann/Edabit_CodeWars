@@ -309,7 +309,6 @@ const length = str => str == '' ? 0 : length(str.substring(1)) + 1;
 const length = str => !str ? 0 : 1 + length(str.slice(1));
 
 
-
 // Recursion Example - StackOverflow
 
 var counter = 10;
@@ -475,3 +474,22 @@ function isEvenOrOdd(num) {
 let isEvenOrOdd = n => n % 2 ? 'odd' : 'even'; 
 
 let isEvenOrOdd = n => n & 1 ? 'odd' : 'even';
+
+// #White - search([2, 4, 6, 8, 10], 8) ➞ 3
+
+// 22. Create a function that finds the index of a given item in a sorted array. Input is (arr, item).
+
+function search(arr, item) {
+	return arr.indexOf(item); 
+}
+
+const search = (arr, item) => arr.indexOf(item);
+
+const search = (arr,item) => {
+	for (let i=0; i<arr.length; i++){
+		if(arr[i] === item){
+			return i;
+		}
+	}
+	return -1;
+};
