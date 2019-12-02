@@ -583,3 +583,21 @@ const reverse = arr => arr.reverse();
 // #White - calculateExponent(5, 5) ➞ 3125
 
 // Create a function that takes a base number and an exponent number and returns the calculation.
+
+function calculateExponent(num, exp) {
+	return Math.pow(num, exp) 
+}
+
+function calculateExponent(num, exp) {
+	return exp > 1 ? num * calculateExponent(num, exp - 1) :  num;
+}
+
+const calculateExponent = (num, exp) => {
+	let newexp = 1;
+	for (let i = 0; i < exp; i++) {
+		newexp = newexp * num
+	}
+	return newexp;
+}
+
+const calculateExponent = (num, exp) => Math.pow(num, exp);
