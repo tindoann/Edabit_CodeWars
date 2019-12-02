@@ -475,7 +475,7 @@ let isEvenOrOdd = n => n % 2 ? 'odd' : 'even';
 
 let isEvenOrOdd = n => n & 1 ? 'odd' : 'even';
 
-// #White - search([2, 4, 6, 8, 10], 8) ➞ 3
+// #Yellow - search([2, 4, 6, 8, 10], 8) ➞ 3
 
 // 22. Create a function that finds the index of a given item in a sorted array using recusion. Input is (arr, item).
 
@@ -500,6 +500,21 @@ const search = (arr,item) => {
 	}
 	return -1;
 };
+
+
+// #Yellow - volumeOfBox({ width: 2, length: 3, height: 5 }) ➞ 30
+
+// 23. Create a function that takes an object argument sizes (contains width, length, height keys) and returns the volume of the box.
+
+function volumeOfBox(sizes) {
+	return sizes.height * sizes.width * sizes.length;
+}
+
+const volumeOfBox = (sizes) => sizes.width * sizes.length * sizes.height;
+
+
+
+
 
 
 
