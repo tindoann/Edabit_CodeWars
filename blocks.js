@@ -582,7 +582,7 @@ const reverse = arr => arr.reverse();
 
 // #White - calculateExponent(5, 5) ➞ 3125
 
-// Create a function that takes a base number and an exponent number and returns the calculation.
+// 26. Create a function that takes a base number and an exponent number and returns the calculation.
 
 function calculateExponent(num, exp) {
 	return Math.pow(num, exp) 
@@ -601,3 +601,31 @@ const calculateExponent = (num, exp) => {
 }
 
 const calculateExponent = (num, exp) => Math.pow(num, exp);
+
+// #White - concat([1, 3, 5], [2, 6, 8]) ➞ [1, 3, 5, 2, 6, 8]
+// 27. Create a function to concatenate two integer arrays.
+
+function concat(arr1, arr2) {
+	return arr1.concat(arr2); 
+}
+
+function concat(arr1, arr2) {
+	for(let i=0;i<= arr2.length-1;i++)
+		{
+			arr1.push(arr2[i]);
+		}
+	return arr1;
+}
+
+function concat(arr1, arr2) {
+	return [...arr1,...arr2]
+	}
+
+function concat(arr1, arr2) {
+	for (item of arr2){
+		arr1.push(item)
+	}	
+	return arr1
+}
+
+	const concat = (arr1, arr2) => arr1.concat(arr2);
