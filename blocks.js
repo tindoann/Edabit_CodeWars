@@ -455,3 +455,23 @@ function search(arr, item) {
 function search(arr, item) {
 	return arr.findIndex(i => i === item)
 }
+
+// #White - isEvenOrOdd(3) ➞ "odd"
+
+// 21. Create a function that takes a number as an argument and returns "even" for even numbers and "odd" for odd numbers.
+
+function isEvenOrOdd(num) {
+  return num % 2 ? 'odd' : 'even';
+}
+
+function isEvenOrOdd(num) {
+	if ( num % 2 === 0) { 
+		return 'even'; 
+	} else {
+		return 'odd'; 
+	}
+}
+
+let isEvenOrOdd = n => n % 2 ? 'odd' : 'even'; 
+
+let isEvenOrOdd = n => n & 1 ? 'odd' : 'even';
