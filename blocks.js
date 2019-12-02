@@ -513,8 +513,41 @@ function volumeOfBox(sizes) {
 const volumeOfBox = (sizes) => sizes.width * sizes.length * sizes.height;
 
 
+// #White = hasSpaces("hello, world") ➞ true
 
+// 24. Create a function that returns true if a string contains any spaces.
 
+function hasSpaces(str) {
+	if (str.includes(' ')) {
+		return true
+	} else {
+		return false
+  }
+}
 
+function hasSpaces(str) {
+	return str.includes(' ') ? true : false
+}
 
+function hasSpaces(str) {
+	return str.includes(' ')
+}
 
+const hasSpaces = str => str.includes(' ');
+
+function hasSpaces(str) {
+	return str.indexOf(' ') != -1;
+}
+
+function hasSpaces(str) {
+	return (/\s/).test(str);
+}
+
+// example 
+
+var sentence = 'The quick brown fox jumps over the lazy dog.';
+
+var word = 'fox';
+
+console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in the sentence`);
+// expected output: "The word "fox" is in the sentence"
