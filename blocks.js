@@ -477,7 +477,14 @@ let isEvenOrOdd = n => n & 1 ? 'odd' : 'even';
 
 // #White - search([2, 4, 6, 8, 10], 8) ➞ 3
 
-// 22. Create a function that finds the index of a given item in a sorted array. Input is (arr, item).
+// 22. Create a function that finds the index of a given item in a sorted array using recusion. Input is (arr, item).
+
+function search(arr, item) {
+	if (arr.toString() === arr.slice(0).sort((a,b) => a - b).toString()){
+    return arr.indexOf(item); 
+	}
+	return -1; 
+}
 
 function search(arr, item) {
 	return arr.indexOf(item); 
@@ -493,3 +500,6 @@ const search = (arr,item) => {
 	}
 	return -1;
 };
+
+
+
