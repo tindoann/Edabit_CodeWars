@@ -3,7 +3,7 @@
 100 Days of Algorithms Challenges - training muscle memory with logic chops
 
 #### White Badge
-A white badge represents the very beginning or the birth of the Hackate process. Like a seed covered by a blanket of snow in the winter, the new Hackate student is ready and waiting to start growing. The brand new student does not yet know how to control their minds or bodies, but their white belt is a symbol of both their clean slate and their willingness to learn.
+A white badge represents the very beginning or the birth of the Hackate process. Like a seed covered by a blanket of snow in the winter, the new Hackate student is ready and waiting to start growing. The brand new student does not yet know how to control their minds or bodies, but their white badge is a symbol of both their clean slate and their willingness to learn.
 
  
 
@@ -18,7 +18,7 @@ As the sun’s rays intensify, they switch from a yellow glow to a bright orange
  
 
 #### Green Badge
-Once the orange belt begins to refine the basic skills they’ve learned so far, they can graduate to a green karate badge. The very basic steps of their journey are complete and they can begin to work toward the intermediate badge. The green color is representative of the seedling itself as it starts to break through the ground and grow.
+Once the orange badge begins to refine the basic skills they’ve learned so far, they can graduate to a green hackate badge. The very basic steps of their journey are complete and they can begin to work toward the intermediate badge. The green color is representative of the seedling itself as it starts to break through the ground and grow.
 
 #### Blue Badge
 Just like a plant reaching up toward the sky as it grows stronger, the green badge builds upon the lessons and techniques that they have already been taught and continues to strive for more knowledge, skill, and ability to control their mind and body in the ways of the art. The blue badge represents the growth toward that sky as the student is fed more and more difficult techniques in order to nurture their growth.
