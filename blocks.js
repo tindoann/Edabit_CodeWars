@@ -769,3 +769,20 @@ function equalSlices(total, people, each) {
 		return false;
 	}
 }
+
+// #White - numArgs("foo", "bar") ➞ 2
+
+// 35. Create a function that returns the number of argument it was called with.
+
+function numArgs() {
+	return arguments.length; 
+}
+
+function numArgs(...args) {
+	return args.length;
+}
+
+const numArgs = (...args) => args.length; 
+
+numArgs = (...a) => a.length || 0
+
