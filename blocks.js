@@ -817,3 +817,23 @@ function remainder(x, y) {
 const remainder = (x, y) => x % y
 
 
+// #Yellow find_index(["hi", "edabit", "fgh", "abc"], "fgh") ➞ 2
+
+// 38. Create a function that takes an array and a string as arguments and return the index of the string.
+
+
+function find_index(arr, str) {
+	return arr.indexOf(str); 
+}
+
+function find_index(arr, str) {
+	for(var i = 0; i < arr.length; i++){
+		if(arr[i] == str){
+			return i
+		}
+	}
+}
+
+function find_index(arr, str) {
+	return arr.indexOf(str)
+}
