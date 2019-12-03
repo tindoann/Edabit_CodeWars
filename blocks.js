@@ -685,3 +685,14 @@ function numberArgs(... a) {
 }
 
 const numberArgs = (...args) => args.length;
+
+// #White - ctoa("m") ➞ 109
+
+// 31. Create a function that returns the ASCII value of the passed in character.
+
+function ctoa(c) {
+	return c.codePointAt();
+}
+
+const ctoa = char => char.charCodeAt(0);
+
