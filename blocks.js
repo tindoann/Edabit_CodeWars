@@ -786,3 +786,23 @@ const numArgs = (...args) => args.length;
 
 numArgs = (...a) => a.length || 0
 
+// #White - match("hello", "hELLo") ➞ true
+
+// 36. Write a function that validates whether two strings are identical. Make it case insensitive.
+
+function match(s1, s2) {
+	return s1.toLowerCase() == s2.toLowerCase()
+}
+
+function match(s1, s2) {
+	if ( s1.toUpperCase() == s2.toUpperCase()) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+const match = (s1, s2) =>  s1.toLowerCase() === s2.toLowerCase();
+
+
+
