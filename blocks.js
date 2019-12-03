@@ -668,4 +668,20 @@ function convert(hours, minutes) {
 
 const convert = (hours, minutes) => hours * 3600 + minutes * 60
 
+// #White - numberArgs(10, 20, 30, 40, 50) ➞ 5
 
+// 30. Create a function that returns the total number of parameters passed in.
+
+function numberArgs() {
+	return arguments.length;
+}
+
+function numberArgs(whatever) {
+	return arguments.length;
+}
+
+function numberArgs(... a) {
+	return (a||[]).length;
+}
+
+const numberArgs = (...args) => args.length;
