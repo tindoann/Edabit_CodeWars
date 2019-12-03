@@ -750,3 +750,22 @@ function formatDate(date) {
 	newDate.push(date[2], date[1], date[0]);
 	return newDate.join('');
 }
+
+// #White - equalSlices(11, 5, 2) ➞ true
+// 5 people x 2 slices each = 10 slices < 11 slices
+
+// 34. Create a function that determines whether or not it's possible to split a pie fairly given these three parameters:
+
+// 1. Total number of slices. 2. Number of recipients. 3. How many slices each person gets.
+
+function equalSlices(total, people, each) {
+	return total >= people * each; 
+}
+
+function equalSlices(total, people, each) {
+	if(people * each <= total) {
+		return true;
+	} else {
+		return false;
+	}
+}
