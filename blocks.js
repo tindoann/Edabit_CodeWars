@@ -651,3 +651,21 @@ function divisible(num) {
 }
 
 const divisible = num => num % 100 === 0;
+
+// #White - convert(1, 3) ➞ 3780
+
+// 29. Write a function that takes two integers (hours, minutes) and converts them into seconds.
+
+function convert(hours, minutes) {
+	return hours * 3600 + minutes * 60; 
+}
+
+function convert(hours, minutes) {
+	var hour = hours * 3600;
+	var min = minutes * 60;
+	return hour + min;	
+}
+
+const convert = (hours, minutes) => hours * 3600 + minutes * 60
+
+
