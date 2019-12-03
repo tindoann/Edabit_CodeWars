@@ -728,3 +728,25 @@ function cityFacts(city) {
 	let {name, population ,continent}=city;
 	return `${name} has a population of ${population} and is situated in ${continent}`
 }
+
+// #Yellow / Chaining - formatDate("11/12/2019") ➞ "20191211"
+
+// 33. Create a function that converts a date formatted as MM/DD/YYYY to YYYYDDMM.
+
+function formatDate(date) {
+	return date.split('/').reverse().join('')
+	}
+
+function formatDate(date) {
+	const [month, day, year] = date.split("/")
+	return `${year}${day}${month}`
+}
+
+let formatDate = date => date.split('/').reverse().join('');
+
+function formatDate(date) {
+	let newDate = [];
+	date = date.split('/');
+	newDate.push(date[2], date[1], date[0]);
+	return newDate.join('');
+}
