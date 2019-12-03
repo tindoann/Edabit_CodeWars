@@ -805,4 +805,15 @@ function match(s1, s2) {
 const match = (s1, s2) =>  s1.toLowerCase() === s2.toLowerCase();
 
 
+// #White - 
+
+// 37. There is a single operator in JavaScript, capable of providing the remainder of a division operation. 
+// Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+
+function remainder(x, y) {
+	return x % y
+}
+
+const remainder = (x, y) => x % y
+
 
