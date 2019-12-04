@@ -550,11 +550,11 @@ var sentence = 'The quick brown fox jumps over the lazy dog.';
 var word = 'fox';
 
 console.log(`The word "${word}" ${sentence.includes(word)? 'is' : 'is not'} in the sentence`);
-// expected output: "The word "fox" is in the sentence"
-
-// #White - reverse([1, 2, 3, 4]) ➞ [4, 3, 2, 1]
 
 // 25. Write a function to reverse an array.
+
+// #White - reverse([1, 2, 3, 4]) ➞ [4, 3, 2, 1]
+// expected output: "The word "fox" is in the sentence"
 
 function reverse(arr) {
 	return arr.reverse()
@@ -580,9 +580,10 @@ function reverse(arr) {
 
 const reverse = arr => arr.reverse();
 
-// #White - calculateExponent(5, 5) ➞ 3125
 
 // 26. Create a function that takes a base number and an exponent number and returns the calculation.
+
+// #White - calculateExponent(5, 5) ➞ 3125
 
 function calculateExponent(num, exp) {
 	return Math.pow(num, exp) 
@@ -602,8 +603,9 @@ const calculateExponent = (num, exp) => {
 
 const calculateExponent = (num, exp) => Math.pow(num, exp);
 
-// #White - concat([1, 3, 5], [2, 6, 8]) ➞ [1, 3, 5, 2, 6, 8]
 // 27. Create a function to concatenate two integer arrays.
+
+// #White - concat([1, 3, 5], [2, 6, 8]) ➞ [1, 3, 5, 2, 6, 8]
 
 function concat(arr1, arr2) {
 	return arr1.concat(arr2); 
@@ -630,9 +632,10 @@ function concat(arr1, arr2) {
 
 	const concat = (arr1, arr2) => arr1.concat(arr2);
 
-// #White - divisible(1000) ➞ true
-
-// 28. Create a function that takes an integer and returns true if it's divisible by 100, otherwise return false.
+	
+	// 28. Create a function that takes an integer and returns true if it's divisible by 100, otherwise return false.
+	
+	// #White - divisible(1000) ➞ true
 
 function divisible(num) {
 	if (num % 100 === 0) {
@@ -652,9 +655,10 @@ function divisible(num) {
 
 const divisible = num => num % 100 === 0;
 
-// #White - convert(1, 3) ➞ 3780
 
 // 29. Write a function that takes two integers (hours, minutes) and converts them into seconds.
+
+// #White - convert(1, 3) ➞ 3780
 
 function convert(hours, minutes) {
 	return hours * 3600 + minutes * 60; 
@@ -668,9 +672,9 @@ function convert(hours, minutes) {
 
 const convert = (hours, minutes) => hours * 3600 + minutes * 60
 
-// #White - numberArgs(10, 20, 30, 40, 50) ➞ 5
-
 // 30. Create a function that returns the total number of parameters passed in.
+
+// #White - numberArgs(10, 20, 30, 40, 50) ➞ 5
 
 function numberArgs() {
 	return arguments.length;
@@ -686,9 +690,10 @@ function numberArgs(... a) {
 
 const numberArgs = (...args) => args.length;
 
-// #White - ctoa("m") ➞ 109
 
 // 31. Create a function that returns the ASCII value of the passed in character.
+
+// #White - ctoa("m") ➞ 109
 
 function ctoa(c) {
 	return c.codePointAt();
@@ -696,18 +701,19 @@ function ctoa(c) {
 
 const ctoa = char => char.charCodeAt(0);
 
-// #White - 
-// cityFacts({
-//   name: "Paris",
-//   population: "2,140,526",
-//   continent: "Europe"
-// }) ➞ "Paris has a population of 2,140,526 and is situated in Europe"
 
 // 32. Create a function that takes an object as an argument and returns a string with facts about the city. The city facts will need to be extracted from the object's three properties:
 // name
 // population
 // continent
 // The string should have the following format: X has a population of Y and is situated in Z (where X is the city name, Y is the population and Z is the continent the city is situated in).
+
+// #White - 
+// cityFacts({
+//   name: "Paris",
+//   population: "2,140,526",
+//   continent: "Europe"
+// }) ➞ "Paris has a population of 2,140,526 and is situated in Europe"
 
 function cityFacts(city) {
 	let name = city.name; 
@@ -729,9 +735,10 @@ function cityFacts(city) {
 	return `${name} has a population of ${population} and is situated in ${continent}`
 }
 
-// #Yellow / Chaining - formatDate("11/12/2019") ➞ "20191211"
 
 // 33. Create a function that converts a date formatted as MM/DD/YYYY to YYYYDDMM.
+
+// #Yellow / Chaining - formatDate("11/12/2019") ➞ "20191211"
 
 function formatDate(date) {
 	return date.split('/').reverse().join('')
@@ -751,12 +758,12 @@ function formatDate(date) {
 	return newDate.join('');
 }
 
-// #White - equalSlices(11, 5, 2) ➞ true
-// 5 people x 2 slices each = 10 slices < 11 slices
 
 // 34. Create a function that determines whether or not it's possible to split a pie fairly given these three parameters:
-
 // 1. Total number of slices. 2. Number of recipients. 3. How many slices each person gets.
+
+// #White - equalSlices(11, 5, 2) ➞ true
+// 5 people x 2 slices each = 10 slices < 11 slices
 
 function equalSlices(total, people, each) {
 	return total >= people * each; 
@@ -770,9 +777,10 @@ function equalSlices(total, people, each) {
 	}
 }
 
-// #White - numArgs("foo", "bar") ➞ 2
 
 // 35. Create a function that returns the number of argument it was called with.
+
+// #White - numArgs("foo", "bar") ➞ 2
 
 function numArgs() {
 	return arguments.length; 
@@ -786,9 +794,10 @@ const numArgs = (...args) => args.length;
 
 numArgs = (...a) => a.length || 0
 
-// #White - match("hello", "hELLo") ➞ true
 
 // 36. Write a function that validates whether two strings are identical. Make it case insensitive.
+
+// #White - match("hello", "hELLo") ➞ true
 
 function match(s1, s2) {
 	return s1.toLowerCase() == s2.toLowerCase()
@@ -805,10 +814,11 @@ function match(s1, s2) {
 const match = (s1, s2) =>  s1.toLowerCase() === s2.toLowerCase();
 
 
-// #White - 
 
 // 37. There is a single operator in JavaScript, capable of providing the remainder of a division operation. 
 // Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+
+// #White - 
 
 function remainder(x, y) {
 	return x % y
@@ -816,11 +826,9 @@ function remainder(x, y) {
 
 const remainder = (x, y) => x % y
 
-
-// #Yellow find_index(["hi", "edabit", "fgh", "abc"], "fgh") ➞ 2
-
 // 38. Create a function that takes an array and a string as arguments and return the index of the string.
 
+// #Yellow find_index(["hi", "edabit", "fgh", "abc"], "fgh") ➞ 2
 
 function find_index(arr, str) {
 	return arr.indexOf(str); 
@@ -838,9 +846,9 @@ function find_index(arr, str) {
 	return arr.indexOf(str)
 }
 
-// #White - stackBoxes(2) ➞ 4
-
 // 39. Write a function that takes a number n and returns the number of stacked boxes in a model n levels high, visible and invisible.
+
+// #White - stackBoxes(2) ➞ 4
 
 function stackBoxes(n) {
 	return Math.pow(n, 2)
@@ -858,10 +866,10 @@ function stackBoxes(n) {
 	return stack
 }
 
-// #White - toInt("532") ➞ 532
-
 // 40. toInt() : A function to convert a string to an integer.
 // toStr() : A function to convert an integer to a string.
+
+// #White - toInt("532") ➞ 532
 
 function toInt(str) {
 	return parseInt(str)
@@ -905,3 +913,31 @@ function negate(arr) {
 	return arr;
 }
 
+// 42. In this challenge, you must verify the equality of two different given parameters: a and b.
+
+// White - checkEquality(1, true) ➞ false
+// A number and a boolean: their type is different
+
+
+function checkEquality(a, b) {
+  return a === b ? true : false;
+}
+
+const checkEquality = (a, b) => a === b;
+
+function checkEquality(a, b) {
+  return a === b;
+}
+
+function checkEquality(a, b) {
+  if (a == "undefined" || a == "null" || a == "NaN")
+		return false
+
+  if (b == "undefined" || b == "null" || b == "NaN")
+		return false
+	
+	if ((typeof a == typeof b) && (a == b))
+		return true
+	else
+		return false
+}
