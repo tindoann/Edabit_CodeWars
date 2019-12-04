@@ -963,3 +963,30 @@ const isInRange = (num, range) => num >= range.min && num <= range.max;
 function isInRange(num, range) {
 	return (num <= range.max && num >= range.min) ? true : false
 }
+
+
+// 44. Create a function that checks if the argument is an integer or a string. Return int if it's an integer and str if it's a string.
+
+// #White - intOrString(9843532) ➞ "int"
+
+function intOrString(param) {
+	if (Number.isInteger(param)) {
+		return 'int'
+	} else {
+		return 'str'
+	}
+}
+
+function intOrString(param) {
+	if (typeof param === 'number' ){
+		return 'int'
+	} else {
+		return 'str'
+	}
+}
+
+function intOrString(param) {
+	return typeof param === 'number' ? 'int' : 'str';
+}
+
+const intOrString = (param) => typeof param === "string" ? "str" : "int"
