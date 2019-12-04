@@ -838,7 +838,7 @@ function find_index(arr, str) {
 	return arr.indexOf(str)
 }
 
-// #White stackBoxes(2) ➞ 4
+// #White - stackBoxes(2) ➞ 4
 
 // 39. Write a function that takes a number n and returns the number of stacked boxes in a model n levels high, visible and invisible.
 
@@ -857,3 +857,51 @@ function stackBoxes(n) {
 	};
 	return stack
 }
+
+// #White - toInt("532") ➞ 532
+
+// 40. toInt() : A function to convert a string to an integer.
+// toStr() : A function to convert an integer to a string.
+
+function toInt(str) {
+	return parseInt(str)
+}
+function toStr(int) {
+	return int.toString()
+}
+
+function toInt(str) {
+	return Number(str)
+}
+function toStr(int) {
+	return String(int)
+}
+
+const toInt = (str) => parseInt(str);
+const toStr = (int) => int.toString();
+
+
+// 41. Negating a positive value -+n will return -n, because all +'s are removed.
+// Negating a negative value --n will return n, because the first - turns the second minus into a +.
+
+// #White - negate([1, 2, 3, 4]) ➞ [-1, -2, -3, -4]
+
+function negate(arr) {
+	return arr.map(value => -value)
+}
+
+negate = arr => {
+	let ret = [];
+	for(let item of arr){
+		ret.push(-item);
+	}
+	return ret;
+}
+
+function negate(arr) {
+	for(let i = 0; i < arr.length; i++) {
+		arr[i] = -arr[i];
+	}
+	return arr;
+}
+
