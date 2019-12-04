@@ -941,3 +941,25 @@ function checkEquality(a, b) {
 	else
 		return false
 }
+
+// 43. Given a number and an object with min and max properties, return true if the number lies within the given range (inclusive).
+
+// #White - isInRange(4, { min: 0, max: 5 }) ➞ true
+
+function isInRange(num, range) {
+	if (num >= range.min && num <= range.max) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function isInRange(num, range) {
+	return num >= range.min && num <= range.max;
+}
+
+const isInRange = (num, range) => num >= range.min && num <= range.max;
+
+function isInRange(num, range) {
+	return (num <= range.max && num >= range.min) ? true : false
+}
