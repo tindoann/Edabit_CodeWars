@@ -837,3 +837,23 @@ function find_index(arr, str) {
 function find_index(arr, str) {
 	return arr.indexOf(str)
 }
+
+// #White stackBoxes(2) ➞ 4
+
+// 39. Write a function that takes a number n and returns the number of stacked boxes in a model n levels high, visible and invisible.
+
+function stackBoxes(n) {
+	return Math.pow(n, 2)
+}
+
+function stackBoxes(n) {
+	return n*n
+}
+
+function stackBoxes(n) {
+	var stack = 0;
+	for(let i = 0; i < n; i++){
+		stack = stack + 2 * i + 1
+	};
+	return stack
+}
