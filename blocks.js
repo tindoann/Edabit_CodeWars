@@ -1113,3 +1113,22 @@ const operation=(a,b)=>
 function operation(num1, num2) {
 	return num1 / num2 === 24 ? 'divided' : num1 * num2 === 24 ? 'multiplied' : num1 - num2 === 24 ? 'subtracted' : num1 + num2 === 24 ? 'added' : null
 }
+
+// 48. Create a function that takes a string and returns the word count. The string will be a sentence.
+
+// White - countWords("Just an example here move along") ➞ 6
+
+function countWords(str) {
+	return str.split(' ').length;
+}
+
+function countWords(str){
+	var arr = str.split(" ");
+	return arr.length
+}
+
+const countWords = str => str.split(' ').length;
+
+const countWords = str => str.replace(/[^\w\s]/gi, '').split(' ').length;
+
+
