@@ -1054,3 +1054,31 @@ function FizzBuzz(num) {
 function FizzBuzz(num) {
 	return ((num%3==0)&(num%5==0))?'FizzBuzz':((num%3==0)?'Fizz':((num%5==0)?'Buzz':String(num)))
 }
+
+// 46. Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".
+
+// isPlural("changes") ➞ true
+
+function isPlural(word) {
+	if (word.endsWith('s')) {
+		return true
+	} else {
+		return false
+	}
+}
+
+function isPlural(word) {
+	return word.endsWith("s");
+}
+
+function isPlural(word) {
+	return word[word.length - 1] == 's';
+}
+
+function isPlural(word) {
+	return (word.charAt(word.length - 1) === 's')
+}
+
+const isPlural = word => word.endsWith('s');
+
+let isPlural = w => /s$/i.test(w)
