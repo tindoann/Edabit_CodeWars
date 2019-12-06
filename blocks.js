@@ -1166,3 +1166,58 @@ function missingAngle(angle1, angle2) {
 function missingAngle(angle1, angle2) {
 	return angle1 + angle2 === 90 ? 'right' : angle1 + angle2 < 90 ? 'obtuse' : 'acute';
 }
+
+// 50. Create functions for the Calculator class that can do the following :
+
+// add two numbers
+// subtract two numbers
+// multiply two numbers
+// divide two numbers
+
+// Yellow - calculator.add(10, 5) ➞ 15
+
+class Calculator {
+
+	add(a,b) {
+		return a + b;
+	}
+	subtract(a,b) {
+		return a - b;
+	}
+	multiply(a,b) {
+		return a * b;
+	}
+	divide(a,b) {
+		return a / b;
+	}
+}
+
+class Calculator {
+	add = (a,b) => a + b;
+	subtract = (a,b) =>  a - b;
+	multiply = (a,b) => a * b;
+	divide = (a,b) => a / b;
+}
+
+class Calculator {
+	constructor(a,b) {
+		this.a = a,
+		this.b = b
+	}
+
+	add(a,b) {
+		return a+b;
+	}
+	
+	subtract(a,b) {
+		return a-b;
+	}
+	
+	multiply(a,b) {
+		return a*b;
+	}
+	
+	divide(a,b) {
+		return a/b;
+	}
+}
