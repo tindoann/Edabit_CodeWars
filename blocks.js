@@ -1409,3 +1409,49 @@ function retrieveMinor(semver) {
 function retrievePatch(semver) {
 	return [...semver][4];
 }
+
+// 57. You hired three programmers and you (hopefully) pay them. Create a function that takes three numbers 
+// (the hourly wage of each programmer) and returns the difference between the highest-paid programmer and the lowest-paid.
+
+// White - programmers(147, 33, 526) ➞ 493
+
+function programmers(one, two, three) {
+	return Math.max(...arguments) - Math.min(...arguments)
+}
+
+function programmers(one, two, three) {
+	return Math.max(one, two, three) - Math.min(one, two, three);
+}
+
+function programmers(one, two, three) {
+	let high = Math.max(one, two, three);
+	let low = Math.min (one, two, three);
+	return high - low;
+}
+
+function programmers(one, two, three) {
+	let arr = [...arguments].sort((a,b)=>a-b)
+	return arr.pop()-arr.shift()
+}
+
+const programmers = (x,y,z) => Math.max(x,y,z) - Math.min(x,y,z)
+
+function programmers(one, two, three) {
+	var max = 0;
+	var min=0;
+	for (i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
+    }
+  }
+	var maximum = max;
+	
+	for (i = arguments.length; i >=0 ; i--) {
+    if (arguments[i] < max) {
+      max = arguments[i];
+			min=max;
+    }
+  }
+	
+	return maximum-min;
+}
