@@ -1247,3 +1247,45 @@ function numberSyllables(word) {
 }
 
 const numberSyllables = word => word.split('-').length
+
+// 52. Create a function that takes an array of numbers and return the first and last elements as a new array.
+
+// Yellow - firstLast(["edabit", 13, null, false, true]) ➞ ["edabit", true]
+
+
+
+function firstLast(arr) {
+	let newArray = [];
+	let first = arr.shift()
+	let last = arr.pop()
+	
+	newArray.push(first);
+	newArray.push(last);
+	
+	return (newArray)
+}
+
+function firstLast(arr) {
+	return [arr.shift(), arr.pop()]
+}
+
+function firstLast(arr) {
+	const myArr = [];
+	myArr.push(arr.shift());
+	myArr.push(arr.pop());
+	return myArr;
+}
+
+const firstLast = arr => [arr.shift(), arr.pop()];
+
+function firstLast(arr) {
+	let newArr = [];
+	newArr.push(arr[0], arr[arr.length - 1]);
+	return newArr;
+}
+
+function firstLast(arr) {
+	return [arr[0], arr[arr.length-1]]
+}
+
+const firstLast = ([first, ...rest]) => [first, rest.pop()];
