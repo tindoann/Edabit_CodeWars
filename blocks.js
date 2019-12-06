@@ -1313,3 +1313,46 @@ function Go(num) {
 		}
 	return result.join("");
 }
+
+
+// 54. Create a function that takes three number arguments — one number as an input and two additional
+// numbers representing the endpoints of a closed range — and return the number limited to this range.
+
+// Yellow - limitNumber(5, 1, 10) ➞ 5
+// limitNumber(14, 1, 10) ➞ 10
+
+/* 
+
+If the number falls within the range, the number should be returned.
+If the number is less than the lower limit of the range, the lower limit should be returned.
+If the number is greater than the upper limit of the range, the upper limit should be returned.
+
+*/
+
+function limitNumber(num, rangeLow, rangeHigh) {
+	if (num >= rangeLow && num <= rangeHigh) {
+		return num;
+	} else if (num < rangeLow) {
+		return rangeLow; 
+	} else {
+		return rangeHigh; 
+	}
+}
+
+const limitNumber = (num, min, max) => Math.max(min, Math.min(max, num));
+
+function limitNumber(num, rangeLow, rangeHigh) {
+	return [...arguments].sort((a, b) => a - b)[1]
+}
+
+let limitNumber = (num, rangeLow, rangeHigh) => 
+num < rangeLow ? rangeLow :
+num > rangeHigh ? rangeHigh : num;
+
+function limitNumber(num, rangeLow, rangeHigh) {
+	return num>rangeHigh ? rangeHigh: num<rangeLow ? rangeLow: num
+}
+
+let limitNumber = (num, low, high) =>
+num < low ? low : num > high ? high : num;
+
