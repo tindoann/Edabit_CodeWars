@@ -402,9 +402,10 @@ const helloName = name => `Hello ${name}!`
 
 const helloName = name => 'Hello ' + name+'!'
 
-// #White - getLastItem(["cat", "dog", "duck"]) ➞ "duck"
 
 // 19. Create a function that accepts an array and returns the last item in the array.
+
+// #White - getLastItem(["cat", "dog", "duck"]) ➞ "duck"
 
 function getLastItem(arr) {
 	return arr.pop()
@@ -426,7 +427,6 @@ function getLastItem(arr) {
   else return(null);
 }
 
-
 // codeblocq example
 
 var array = [1,2,3,4,5,6];
@@ -434,9 +434,9 @@ console.log(array.slice(-1)); // [6]
 console.log(array.slice(-2)); // [5,6]
 console.log(array.slice(-3)); // [4,5,6]
 
-// #White - search([9, 8, 3], 3) ➞ 2
-
 // 20. Create a function that finds the index of a given item.
+
+// #White - search([9, 8, 3], 3) ➞ 2
 
 function search(arr, item) {
 	return arr.indexOf(item); 
@@ -455,9 +455,9 @@ function search(arr, item) {
 	return arr.findIndex(i => i === item)
 }
 
-// #White - isEvenOrOdd(3) ➞ "odd"
-
 // 21. Create a function that takes a number as an argument and returns "even" for even numbers and "odd" for odd numbers.
+
+// #White - isEvenOrOdd(3) ➞ "odd"
 
 function isEvenOrOdd(num) {
   return num % 2 ? 'odd' : 'even';
@@ -475,9 +475,9 @@ let isEvenOrOdd = n => n % 2 ? 'odd' : 'even';
 
 let isEvenOrOdd = n => n & 1 ? 'odd' : 'even';
 
-// #Yellow - search([2, 4, 6, 8, 10], 8) ➞ 3
-
 // 22. Create a function that finds the index of a given item in a sorted array using recusion. Input is (arr, item).
+
+// #Yellow - search([2, 4, 6, 8, 10], 8) ➞ 3
 
 function search(arr, item) {
 	if (arr.toString() === arr.slice(0).sort((a,b) => a - b).toString()){
@@ -512,10 +512,9 @@ function volumeOfBox(sizes) {
 
 const volumeOfBox = (sizes) => sizes.width * sizes.length * sizes.height;
 
+// 24. Create a function that returns true if a string contains any spaces.
 
 // #White = hasSpaces("hello, world") ➞ true
-
-// 24. Create a function that returns true if a string contains any spaces.
 
 function hasSpaces(str) {
 	if (str.includes(' ')) {
@@ -580,7 +579,6 @@ function reverse(arr) {
 
 const reverse = arr => arr.reverse();
 
-
 // 26. Create a function that takes a base number and an exponent number and returns the calculation.
 
 // #White - calculateExponent(5, 5) ➞ 3125
@@ -632,7 +630,6 @@ function concat(arr1, arr2) {
 
 	const concat = (arr1, arr2) => arr1.concat(arr2);
 
-	
 	// 28. Create a function that takes an integer and returns true if it's divisible by 100, otherwise return false.
 	
 	// #White - divisible(1000) ➞ true
@@ -690,7 +687,6 @@ function numberArgs(... a) {
 
 const numberArgs = (...args) => args.length;
 
-
 // 31. Create a function that returns the ASCII value of the passed in character.
 
 // #White - ctoa("m") ➞ 109
@@ -700,7 +696,6 @@ function ctoa(c) {
 }
 
 const ctoa = char => char.charCodeAt(0);
-
 
 // 32. Create a function that takes an object as an argument and returns a string with facts about the city. The city facts will need to be extracted from the object's three properties:
 // name
@@ -735,7 +730,6 @@ function cityFacts(city) {
 	return `${name} has a population of ${population} and is situated in ${continent}`
 }
 
-
 // 33. Create a function that converts a date formatted as MM/DD/YYYY to YYYYDDMM.
 
 // #Yellow / Chaining - formatDate("11/12/2019") ➞ "20191211"
@@ -758,7 +752,6 @@ function formatDate(date) {
 	return newDate.join('');
 }
 
-
 // 34. Create a function that determines whether or not it's possible to split a pie fairly given these three parameters:
 // 1. Total number of slices. 2. Number of recipients. 3. How many slices each person gets.
 
@@ -776,7 +769,6 @@ function equalSlices(total, people, each) {
 		return false;
 	}
 }
-
 
 // 35. Create a function that returns the number of argument it was called with.
 
@@ -812,8 +804,6 @@ function match(s1, s2) {
 }
 
 const match = (s1, s2) =>  s1.toLowerCase() === s2.toLowerCase();
-
-
 
 // 37. There is a single operator in JavaScript, capable of providing the remainder of a division operation. 
 // Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
@@ -918,7 +908,6 @@ function negate(arr) {
 // White - checkEquality(1, true) ➞ false
 // A number and a boolean: their type is different
 
-
 function checkEquality(a, b) {
   return a === b ? true : false;
 }
@@ -963,7 +952,6 @@ const isInRange = (num, range) => num >= range.min && num <= range.max;
 function isInRange(num, range) {
 	return (num <= range.max && num >= range.min) ? true : false
 }
-
 
 // 44. Create a function that checks if the argument is an integer or a string. Return int if it's an integer and str if it's a string.
 
@@ -1083,11 +1071,9 @@ const isPlural = word => word.endsWith('s');
 
 let isPlural = w => /s$/i.test(w)
 
-
 // 47. Write a function that takes two numbers and returns if they should be added, subtracted, multiplied or divided to get 24. If none of the operations can give 24, return null.
 
 // White - operation(15, 9) ➞ "added"
-
 
 function operation(num1, num2) {
 	if (num1 + num2 == 24) {
@@ -1252,8 +1238,6 @@ const numberSyllables = word => word.split('-').length
 
 // Yellow - firstLast(["edabit", 13, null, false, true]) ➞ ["edabit", true]
 
-
-
 function firstLast(arr) {
 	let newArray = [];
 	let first = arr.shift()
@@ -1289,3 +1273,43 @@ function firstLast(arr) {
 }
 
 const firstLast = ([first, ...rest]) => [first, rest.pop()];
+
+// 53. Create a function that takes a number (from 1 - 60) and returns a corresponding string of hyphens.
+
+// Yellow - Go(5) ➞ "-----"
+
+function Go(num) {
+	let counter = ''; 
+	if (num >= 1 && num <= 60) {
+		for (let i = 0; i < num; i++) {
+			counter += '-'; 
+		}
+		return counter; 
+	}
+}
+
+function Go(num) {
+	let str = '';
+	 for(let i = 0; i < num; i++){
+	 str += '-';
+	 }
+	 return str;
+ }
+
+function Go(num) {
+	return "-".repeat(num);
+}
+
+const Go = num => '-'.repeat(num);
+
+function Go(num) {
+	return Array(num).fill('-').join('');
+}
+
+function Go(num) {
+	let result = [];
+		for (let i = 0; i < num; i++) {
+			result.push("-");
+		}
+	return result.join("");
+}
