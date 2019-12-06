@@ -1356,3 +1356,14 @@ function limitNumber(num, rangeLow, rangeHigh) {
 let limitNumber = (num, low, high) =>
 num < low ? low : num > high ? high : num;
 
+// 55. Create a function that takes an array and returns the difference between the smallest and biggest numbers.
+
+// Yellow - diffMaxMin([10, 4, 1, 4, -10, -50, 32, 21]) ➞ 82
+// Smallest number is -50, biggest is 32.
+
+function diffMaxMin(arr) {
+	return Math.max(...arr) - Math.min(...arr)
+}
+
+const diffMaxMin = a => Math.max(...a) - Math.min(...a);
+
