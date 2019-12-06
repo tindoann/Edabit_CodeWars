@@ -1221,3 +1221,29 @@ class Calculator {
 		return a/b;
 	}
 }
+
+// 51. Create a function that counts the number of syllables a word has. Each syllable is separated with a dash -.
+
+// Yellow - numberSyllables("beau-ti-ful") ➞ 3
+
+function numberSyllables(word) {
+	return word.split("-").length;
+}
+
+function numberSyllables(word) {
+  let count = 1;
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === '-') {
+      count += 1
+    }
+  }
+  return count
+}
+
+function numberSyllables(word) {
+	let regex = /-/g ;
+	let syl = word.match(regex);
+	return syl.length+1;
+}
+
+const numberSyllables = word => word.split('-').length
