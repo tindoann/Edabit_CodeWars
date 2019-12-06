@@ -1367,3 +1367,45 @@ function diffMaxMin(arr) {
 
 const diffMaxMin = a => Math.max(...a) - Math.min(...a);
 
+function diffMaxMin(arr) {
+	arr.sort(function(a,b){return a-b;})
+	return arr[arr.length-1]-arr[0];
+}
+
+/*
+
+56. In semantic versioning a piece of software can be represented in a format like this example: 6.1.9.
+
+The first number is the major version.
+The second number is the minor version.
+The third number is the patch (bug fixes).
+Write three separate functions, one to retrieve each element in the semantic versioning specification.
+
+*/
+
+// White - 6.1.9
+// retrieveMajor("6.1.9") ➞ "6"
+
+const retrieveMajor = v => v.split(".")[0];
+const retrieveMinor = v => v.split(".")[1];
+const retrievePatch = v => v.split(".")[2];
+
+function retrieveMajor(semver) {
+	return semver.charAt(0)
+}
+function retrieveMinor(semver) {
+	return semver.charAt(2)
+}
+function retrievePatch(semver) {
+	return semver.charAt(4)
+}
+
+function retrieveMajor(semver) {
+	return [...semver][0];
+}
+function retrieveMinor(semver) {
+	return [...semver][2];
+}
+function retrievePatch(semver) {
+	return [...semver][4];
+}
