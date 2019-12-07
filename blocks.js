@@ -1554,3 +1554,39 @@ function MultiplyByLength(arr) {
 	})
 	return newArr
 }
+
+// 60. Create a function that takes an array of numbers. Return the largest number in the array.
+
+// White - Create a function that takes an array of numbers. Return the largest number in the array.
+
+function findLargestNum(arr) {
+	return Math.max(...arr); 
+}
+
+const findLargestNum = (arr) => Math.max(...arr); 
+
+function findLargestNum(arr) {
+  var max = arr[0];
+  for(var i = 1; i < arr.length; i++) {
+    if(max < arr[i]) {
+       max = arr[i];
+    }
+  }
+  return max;
+}
+
+function findLargestNum(arr) {
+	let num = arr[0];
+	for (let i = 0; i < arr.length; i++){
+		if (arr[i] > num) {
+			num = arr[i]
+		}
+	}
+	return num;
+}
+
+function findLargestNum(arr) {
+  return arr.sort((a, b) => b - a)[0]
+}
+
+
