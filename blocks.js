@@ -1690,3 +1690,28 @@ function additiveInverse(arr) {
 		invArr.push(element*(-1));
 	}return invArr;
 }
+
+// 65. Create a function that returns the smaller number.
+
+// White - smallerNum("21", "44") ➞ "21"
+
+function smallerNum(n1, n2) {
+	num = Math.min(n1, n2);
+	return num.toString();
+}
+
+function smallerNum(n1, n2) {
+  return Math.min(n1, n2).toString();
+}
+
+const smallerNum = (n1, n2) => (Number(n1) < Number(n2) ? n1 : n2);
+
+function smallerNum(n1, n2) {
+	if (Number.parseInt(n1) > Number.parseInt(n2))
+		return n2;
+	else
+		return n1;
+}
+
+
+
