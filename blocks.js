@@ -1590,3 +1590,17 @@ function findLargestNum(arr) {
 }
 
 
+// 61. Create a function that takes a number as an argument and returns the amount of digits it has.
+
+// White - findDigitAmount(123) ➞ 3
+
+function findDigitAmount(num) {
+	return num.toString().length; 
+}
+
+findDigitAmount = num => num.toString().length; 
+
+function findDigitAmount(num) {
+	let str = num.toString();
+	return str.length;
+}
