@@ -1713,5 +1713,16 @@ function smallerNum(n1, n2) {
 		return n1;
 }
 
+// 66. Create a function that takes in an array and returns true if all its values are even, and false otherwise.
+
+// White - checkAllEven([1, 2, 3, 4]) ➞ false
+
+function checkAllEven(arr) {
+  return arr.every(x => x % 2 === 0)
+}
+
+const checkAllEven = arr => arr.every(x => x % 2 === 0);
+
+
 
 
