@@ -1658,3 +1658,35 @@ function removeVowels(str) {
 }
 
 
+// 64. A number added with its additive inverse equals zero. Create a function that returns an array of additive inverses.
+
+// White - additiveInverse([5, -7, 8, 3]) ➞ [-5, 7, -8, -3]
+
+function additiveInverse(arr) {
+	return arr.map(item => item * -1); 
+}
+
+const additiveInverse = (arr) => arr.map(item => item * 1)
+
+function additiveInverse(arr) {
+	for (i = 0; i < arr.length; i++){
+		 arr[i] = arr[i]*-1  
+	}
+	return arr
+}
+
+function additiveInverse(arr) {
+	newArr = [];
+	arr.forEach(num => {
+		console.log(num);
+		newArr.push(num * -1);
+	});
+	return newArr;
+}
+
+function additiveInverse(arr) {
+	const invArr = [];
+	for (element of arr){
+		invArr.push(element*(-1));
+	}return invArr;
+}
