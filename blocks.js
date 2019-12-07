@@ -1604,3 +1604,44 @@ function findDigitAmount(num) {
 	let str = num.toString();
 	return str.length;
 }
+
+// 62. Write a function that returns true if two rooks can attack each other, and false otherwise.
+
+// Yellow - canCapture(["A8", "E8"]) ➞ true  canCapture(["A1", "B2"]) ➞ false
+
+function canCapture([yourRook, opponentsRook]) {
+	if (yourRook.charAt(0) == opponentsRook.charAt(0)) {
+			return true; 
+	} else if (yourRook.charAt(1) === opponentsRook.charAt(1)) {
+			return true; 
+	} else {
+		  return false; 
+	}
+}
+
+function canCapture([yourRook, opponentsRook]) {
+	if(yourRook[0] === opponentsRook[0] || yourRook[1] === opponentsRook[1]) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function canCapture([yourRook, opponentsRook]) {
+	return yourRook[0] === opponentsRook[0] || yourRook[1] === opponentsRook[1];
+}
+
+function canCapture([yourRook, opponentsRook]) {
+	return opponentsRook.includes(yourRook[0]) || opponentsRook.includes(yourRook[1]) ? true : false
+}
+
+const canCapture = (arr) => {
+	for (let i=0; i<arr.length; i++) {
+		return arr[i][0] === arr[i+1][0] || arr[i][1] === arr[i+1][1]
+	}
+}
+
+function canCapture([yourRook, opponentsRook]) {
+	return ((yourRook.split("")[0] === opponentsRook.split("")[0]) || yourRook.split("")[1]=== opponentsRook.split("")[1]) ? true : false;
+}
+
