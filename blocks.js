@@ -1645,3 +1645,16 @@ function canCapture([yourRook, opponentsRook]) {
 	return ((yourRook.split("")[0] === opponentsRook.split("")[0]) || yourRook.split("")[1]=== opponentsRook.split("")[1]) ? true : false;
 }
 
+// 63. Remove all vowels from the string.
+
+// Yellow - removeVowels("candy") ➞ "cndy"
+
+function removeVowels(str) {
+  return str.replace(/[aeiou]/gi, '')
+}
+
+function removeVowels(str) {
+  return str.replace(/[aeiou]/g, '')
+}
+
+
