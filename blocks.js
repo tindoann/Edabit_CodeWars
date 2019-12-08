@@ -1793,3 +1793,30 @@ const isTruthy = (input) => {
 	x = [false,null,undefined,0,NaN,``];
 	return (x.includes(input)?0:1);
 }
+
+/* 69. 
+
+Write two functions:
+
+firstArg() should return the first parameter passed in.
+lastArg() should return the last parameter passed in.
+Return undefined if the function takes no parameters.
+
+*/
+
+// White - firstArg(1, 2, 3) ➞ 1
+
+function firstArg() {
+	return arguments[0];
+}
+
+function lastArg() {
+	return arguments[arguments.length-1];
+}
+
+const firstArg = (...args) => args[0];
+const lastArg = (...args) => args[args.length - 1];
+
+const firstArg = (...args) => args.shift();
+const lastArg = (...args) => args.pop();
+
