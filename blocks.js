@@ -1723,6 +1723,32 @@ function checkAllEven(arr) {
 
 const checkAllEven = arr => arr.every(x => x % 2 === 0);
 
+// 67. Create a function replaces all the vowels in a string with a specified character.
 
+// White - replaceVowels("the aardvark", "#") ➞ "th# ##rdv#rk"
 
+function replaceVowels(str, ch) {
+	return str.replace(/[aeiou]/gi, ch)
+}
+
+function replaceVowels(str, ch) {
+	const vowels = ['a', 'e', 'i', 'o', 'u'];
+	
+	const strArry = [...str].map((char) => {
+		return vowels.includes(char) ? ch : char;
+	});
+	return strArry.join('');
+}
+
+const replaceVowels = (str, ch) => str.replace(/[aeiouy]/gi, ch)
+
+function replaceVowels(str, ch) {
+	str = str.split('');
+	for(var i=0; i < str.length; i++){
+		if(str[i]==='a'|| str[i]==='e'||str[i]==='i'||str[i]==='u'||str[i]==='o'){
+			str[i] = ch;
+		}
+	}
+	return str.join('');
+}
 
