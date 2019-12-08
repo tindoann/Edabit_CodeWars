@@ -1820,3 +1820,57 @@ const lastArg = (...args) => args[args.length - 1];
 const firstArg = (...args) => args.shift();
 const lastArg = (...args) => args.pop();
 
+// 70. Given an array of integers, return the difference between the largest and smallest integers in the array.
+
+// White - difference([10, 15, 20, 2, 10, 6]) ➞ 18
+// 20 - 2 = 18
+
+function difference(nums) {
+	return Math.max(...nums) - Math.min(...nums)
+}
+
+const difference = nums => Math.max(...nums) - Math.min(...nums);
+
+function difference(nums) {
+	let maxNum = 0;
+	let minNum = nums[0];
+	
+	for(let i = 0; i < nums.length; i++){
+		if(nums[i] > maxNum) maxNum = nums[i];
+		if(nums[i] < minNum) minNum = nums[i];
+	}
+	
+	return maxNum - minNum;
+}
+
+function difference(nums) {
+	return nums.sort((a,b) => a-b)[nums.length-1]-nums.sort((a,b) => a-b)[0];
+}
+
+function difference(nums) {
+	nums=nums.sort((a,b)=>{
+		return a-b;
+	})
+	return nums[nums.length-1]-nums[0];
+}
+
+function difference(nums) {
+	nums.sort((a, b) => a - b);
+	let myArray = [nums[0], nums[nums.length-1]];
+	var x = myArray[1] - myArray[0];
+	return(x);
+}
+
+function difference(nums) {
+	let max = nums.reduce(function(a, b){
+		return Math.max(a,b);
+	});
+	let min = nums.reduce(function(a, b){
+		return Math.min(a, b);
+	});
+	return max - min;
+}
+
+
+
+
