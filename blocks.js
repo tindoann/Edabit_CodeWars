@@ -2004,3 +2004,24 @@ function transform(arr) {
 	})
 	return x
 }
+
+// 74. A word has been split into a left part and a right part. Re-form the word by adding both halves together, changing the first character to an uppercase letter.
+
+// Yellow - getWord("seas", "onal") ➞ "Seasonal"
+
+function getWord(left, right) {
+	return left.charAt(0).toUpperCase()+ left.slice(1) + right
+}
+
+function getWord(left, right) {
+	return left[0].toUpperCase() + left.slice(1) + right
+}
+
+const getWord=(left, right)=> 
+left.replace(/^./g,match=>match.toUpperCase())+right
+
+function getWord(left, right) {
+	return left[0].toUpperCase()
+		.concat(left.slice(1))
+		.concat(right)
+}
