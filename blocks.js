@@ -2025,3 +2025,11 @@ function getWord(left, right) {
 		.concat(left.slice(1))
 		.concat(right)
 }
+
+// 75. Write a regular expression that matches a string if it contains at least one digit.
+
+// "23cc4" ➞ true
+
+let x = /\d/
+
+let x = /[0-9]/
