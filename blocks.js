@@ -1963,3 +1963,44 @@ function isBetween(first, last, word) {
   }
   return true
 }
+
+// 73. Create a function that goes through the array, incrementing (+1) for each odd number and decrementing (-1) for each even number.
+
+// Yellow -  transform([1, 2, 3, 4, 5]) ➞ [2, 1, 4, 3, 6]
+
+function transform(arr) {
+	return arr.map(num => num % 2 === 0 ? num - 1 : num + 1)
+}
+
+const transform = arr => arr.map(x => x % 2 ? x + 1 : x - 1);
+
+function transform(arr) {
+	for(i = 0; i < arr.length; i++){
+		if(arr[i] % 2 == 0){
+			arr[i] = arr[i]-1;
+		}
+		else{
+			arr[i] = arr[i]+1
+		}
+	}
+	return arr;
+}
+
+function transform(arr) {
+	let arr1=[]
+	for(i=0;i<arr.length;i++){
+	let x=0
+		if(arr[i]%2===0){x=(arr[i]-1)}
+		else{x=(arr[i]+1)}
+		arr1.push(x)
+	}
+	return arr1
+}
+
+function transform(arr) {
+	const x = []
+	arr.forEach(a => {
+		a % 2 === 0 ? x.push(a-1) : x.push(a+1)
+	})
+	return x
+}
