@@ -1872,5 +1872,94 @@ function difference(nums) {
 }
 
 
+// 71. Create a function that takes an array of students and returns an array of student names.
+
+/* White -
+
+getStudentNames([
+  { name: "Steve" },
+  { name: "Mike" },
+  { name: "John" }
+]) ➞ ["Steve", "Mike", "John"]
+
+*/
 
 
+function getStudentNames(students) {
+	return students.map(student => student.name); 
+}
+
+function getStudentNames(students) {
+	newarray = [];
+	for (let i = 0; i < students.length; i++) {
+			newarray.push(students[i].name);
+	}
+	return newarray;
+}
+
+function getStudentNames(students) {
+  const arr = [];
+	students.forEach(student => arr.push(student.name));
+	return arr;
+}
+
+function getStudentNames(students) {
+	this.students = students;
+let arr = [];
+for (let x = 0; x < this.students.length; x++) {
+	arr.push(this.students[x]['name']);
+}
+return (arr);
+}
+
+function getStudentNames(students) {
+  const arr = [];
+	students.forEach(student => arr.push(student.name));
+	return arr;
+}
+
+// 72. Write a function that takes three string arguments (first, last, word) and returns true if (when alphabetically sorted) word is found between first and last.
+
+// Yellow - isBetween("apple", "banana", "azure") ➞ true
+
+
+function isBetween(first, last, word) {
+	return word > first && word < last;
+}
+
+function isBetween(first, last, word) {
+	return [...arguments].sort()[1] === word;
+}
+
+const isBetween = (first, last, word) => [first, last, word].sort()[1] === word;
+
+function isBetween(first, last, word) {
+	return [first,last,word].sort().indexOf(word) == 1;
+}
+
+function isBetween(first, last, word) {
+	let wordsArr = [first, last, word];
+	if(wordsArr.sort()[1] == word){
+		return true ;
+	}
+	return false;
+
+}
+
+const isBetween = function(start_word, end_word, word){
+	return start_word <= word && end_word >= word ? true : false;
+};
+
+function isBetween(first, last, word) {
+	let newArr = [first,word,last]
+  let sortedArr = newArr.slice().sort()
+  for(let i =0;i<newArr.length;i++){
+    if(newArr[i]===sortedArr[i]){
+      continue
+    }
+    if(newArr[i]!==sortedArr[i]){
+      return false
+    }
+  }
+  return true
+}
