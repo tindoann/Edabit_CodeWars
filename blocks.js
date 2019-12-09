@@ -2033,3 +2033,60 @@ function getWord(left, right) {
 let x = /\d/
 
 let x = /[0-9]/
+
+// 76. Create a function that returns true if an input string contains only uppercase or only lowercase letters.
+
+// sameCase("hello") ➞ true
+
+function sameCase(str) {
+  return /^[A-Z]+$/.test(str) || /^[a-z]+$/.test(str);
+}
+
+const sameCase = str =>
+	str.toUpperCase() === str || str.toLowerCase() === str;
+	
+	function sameCase(str) {
+		return str === str.toUpperCase() || str === str.toLowerCase() ? true : false
+	}
+
+	function sameCase(str) {
+		return (str === str.toLowerCase()) || (str === str.toUpperCase());
+	}
+
+	function sameCase(str) {
+		return /\b[a-z]+\b|\b[A-Z]+\b/g.test(str)
+	}
+
+// 77. Create a function that takes an array of hurdle heights and a jumper's jump height, and determine whether or not the hurdler can clear all the hurdles.
+// A hurdler can clear a hurdle if their jump height is greater than or equal to the hurdle height.
+
+// Yellow - hurdleJump([1, 2, 3, 4, 5], 5) ➞ true
+
+
+	function hurdleJump(hurdles, jumpHeight) {
+		if (hurdles.every(x => x <= jumpHeight)) {
+		 return true; 
+		} else {
+		 return false;
+		}
+	}
+
+	function hurdleJump(hurdles, jumpHeight) {
+		return Math.max(...hurdles) <= jumpHeight;
+	}
+
+	function hurdleJump(hurdles, jumpHeight) {
+		return hurdles.every(h => jumpHeight >= h)
+	}
+
+	function hurdleJump(hurdles, jumpHeight) {
+		for(i=0;i<hurdles.length;i++){
+			if(jumpHeight < hurdles[i])
+				return false;
+		}
+		return true;
+	}
+
+	function hurdleJump(hurdles, jumpHeight) {
+		return (hurdles.sort((a, b) => a < b)[0] || 0) <= jumpHeight;
+	}
