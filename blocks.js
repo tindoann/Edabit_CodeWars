@@ -2187,4 +2187,39 @@ function profit(info) {
 
 const profit = prod => Math.round((prod.sellPrice - prod.costPrice) * prod.inventory);
 
+// 81. Create a function that takes a string and returns true or false, depending on whether the characters are in order or not.
+
+// Yellow - isInOrder("abc") ➞ true
+// isInOrder("edabit") ➞ false
+
+function isInOrder(str) {
+	let y = str.split('').sort().join('')
+		if (str === y) {
+			return true
+		} else {
+			return false
+		}
+	}
+
+function isInOrder(str) {
+	return str === str.split("").sort().join("")
+}
+
+const isInOrder = str => [...str].sort().join('') === str;
+
+function isInOrder(str) {
+	return str === str.split("").sort().join("");
+}
+
+function isInOrder(str) {
+	return [...str].sort().join('') === str
+}
+
+function isInOrder(str) {
+	str = str.split("");
+	for (let i = 0; i < str.length - 1; i++) {
+		if (str[i].charCodeAt(0) > str[i+1].charCodeAt(0)) return false;
+	}
+	return true;
+}
 
