@@ -2152,3 +2152,39 @@ function hasKey(obj, key) {
 	}
 	return false;
 }
+
+/* 80. 
+
+You work for a manufacturer, and have been asked to calculate the total profit made on the sales of a product. 
+You are given an object containing the cost price per unit (in dollars), sell price per unit (in dollars), 
+and the starting inventory. Return the total profit made, rounded to the nearest dollar. Assume all of the 
+inventory has been sold.
+
+profit({
+  costPrice: 32.67,
+  sellPrice: 45.00,
+  inventory: 1200
+}) ➞ 14796
+
+*/
+
+function profit(info) {
+	let profit = [];
+	let sellPrice = info.sellPrice; 
+	let costPrice = info.costPrice; 
+	let inventory = info.inventory; 
+	return profit = Math.round((sellPrice - costPrice) * inventory); 
+}
+
+function profit(info) {
+	return Math.round((info.sellPrice * info.inventory)-(info.costPrice * info.inventory))
+	}
+
+	function profit(info) {
+		let profit = (info.sellPrice - info.costPrice) * info.inventory;
+		return Math.round(profit);
+	}
+
+const profit = prod => Math.round((prod.sellPrice - prod.costPrice) * prod.inventory);
+
+
