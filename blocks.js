@@ -2257,5 +2257,22 @@ function countdown(start) {
 	return [...Array(start + 1)].map((i) => start - i)
 }
 
+// 84. Your task is to create a function that, when fed the inputs below, produce the sample outputs shown.
+
+// White - [17, 11, 99, 55, 23, 1], 5 ➞ [2, 1, 4, 0, 3, 1]
+
+function mysteryFunc(arr, num) {
+  return arr.map(el => el % num)
+} 
+
+const mysteryFunc = (arr, num) => arr.map(el => el % num);
+
+function mysteryFunc(arr, num) {
+  var newArr = [];
+	for (var i = 0; i < arr.length; i++){
+		newArr.push(arr[i]%num);
+	}
+	return newArr;
+}
 
 
