@@ -2239,3 +2239,23 @@ function isEqual(num1, num2) {
 function isEqual(num1, num2) {
 	return Number.isInteger(num1,num2) && num1 == num2;
 }
+
+// 83. Create a function that takes a number as an argument and returns an array of numbers counting down from this number to zero.
+
+// White - countdown(5) ➞ [5, 4, 3, 2, 1, 0]
+
+function countdown(start) {
+	let result = []; 
+
+	for(let i = start; i >= 0; i--) {
+		result.push (i)
+	}
+	return result; 
+}
+
+function countdown(start) {
+	return [...Array(start + 1)].map((i) => start - i)
+}
+
+
+
