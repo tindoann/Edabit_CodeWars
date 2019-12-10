@@ -2090,3 +2090,27 @@ const sameCase = str =>
 	function hurdleJump(hurdles, jumpHeight) {
 		return (hurdles.sort((a, b) => a < b)[0] || 0) <= jumpHeight;
 	}
+
+// 78. Create a function to remove all null values from an array.
+
+// White - removeNull(["a", null, "b", null]) ➞ ["a", "b"]
+
+function removeNull(arr) {
+	return arr.filter(el => el != null)
+}
+
+const removeNull = (arr) => arr.filter((a) => a !== null);
+
+function removeNull(arr) {
+	return arr.filter(Boolean);
+}
+
+const removeNull = (arr) => {
+	let newArr=[];	
+	 for(let i=0;i<arr.length;i++)
+		 {
+			 if(arr[i] != null)
+			 newArr.push(arr[i])
+		 }
+	 return newArr
+ }
