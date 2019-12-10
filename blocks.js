@@ -2114,3 +2114,41 @@ const removeNull = (arr) => {
 		 }
 	 return newArr
  }
+
+// 79. Write a function that returns true if a hash contains the specified key, and false otherwise.
+
+// White = hasKey({ a: 44, b: 45, c: 46 }, "d") ➞ false
+
+function hasKey(obj, key) {
+	if (obj.hasOwnProperty(key)) {
+		return true; 
+	} else {
+		return false;
+	}
+}
+
+function hasKey(obj, key) {
+	return obj.hasOwnProperty(key);
+}
+
+function hasKey(obj, key) {
+	return Object.keys(obj).includes(key);
+}
+
+function hasKey(obj, key) {
+	return key in obj;
+}
+
+const hasKey = (obj, key) => obj.hasOwnProperty(key);
+
+const hasKey = (obj, key) => obj[key]? true : false;
+
+function hasKey(obj, key) {
+	var arr = Object.keys(obj);
+	for(var i=0; i<arr.length; i++){
+		if(arr[i]==key){
+			return true;
+		}
+	}
+	return false;
+}
