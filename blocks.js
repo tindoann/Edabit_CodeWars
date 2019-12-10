@@ -2223,3 +2223,19 @@ function isInOrder(str) {
 	return true;
 }
 
+// 82. Create a function that takes two integers and checks if they are equal.
+
+// White - isEqual("1", 1) ➞ false
+
+const isEqual = (n1, n2) => {
+	return typeof n1 === "string" || typeof n2 === "string" ?
+		false : n1 === n2;
+}
+
+function isEqual(num1, num2) {
+	return typeof num1 === "number" && typeof num2 === "number" && num1 === num2;
+}
+
+function isEqual(num1, num2) {
+	return Number.isInteger(num1,num2) && num1 == num2;
+}
