@@ -2276,3 +2276,34 @@ function mysteryFunc(arr, num) {
 }
 
 
+// 85. Create a function that takes in two arrays: the array of user-typed words, 
+// and the array of correctly-typed words and outputs an array containing 1s (correctly-typed words) 
+// and -1s (incorrectly-typed words).
+
+/* 
+
+Yellow - correctStream(
+  ["it", "is", "find"],
+	["it", "is", "fine"]
+	 ) ➞ [1, 1, -1]
+
+*/
+
+function correctStream(ans, sol) {
+  ans.map(e => sol.indexOf(e) !== -1 ? 1 : -1);
+}
+
+const correctStream = (ans, sol) =>
+  ans.map((ans, i) => (ans === sol[i] ? 1 : -1));
+
+function correctStream(user, correct) {
+	let result = [];
+	for (let i = 0; i < user.length; i++) {
+		if (user[i]=== correct[i]) {
+			result.push(1);
+		} else {
+			result.push(-1);
+		}
+	}
+	return result;
+}
