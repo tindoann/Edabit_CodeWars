@@ -2307,3 +2307,26 @@ function correctStream(user, correct) {
 	}
 	return result;
 }
+
+// 86. Create a function that returns the next element in an arithmetic sequence. In an arithmetic sequence, each element is formed by adding the same constant to the previous element.
+
+// White - nextElement([3, 5, 7, 9]) ➞ 11
+
+
+function nextElement(arr) {
+	return arr[arr.length - 1] + (arr[1] - arr[0]);
+}
+
+const nextElement = arr => {
+	const [secondLast, last] = arr.slice(-2);
+	return last + (last - secondLast);
+}
+
+function nextElement(arr) {
+  let result = '';
+  let dif = arr[1] - arr[0];
+  result = arr.slice(-1)[0] + dif;
+  return result;
+}
+
+const nextElement = a => (a[1] - a[0]) + a[a.length - 1];
